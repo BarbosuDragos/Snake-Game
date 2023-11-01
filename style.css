@@ -1,0 +1,73 @@
+html {
+    --s: 100px; 
+    --c:#043809;
+    
+    --l:var(--c) 20%,#0000 0;
+    --g:35%,#2e811e 0 45%,var(--c) 0;
+    background:
+      linear-gradient(45deg,var(--l) 45%,var(--c) 0 70%,#0000 0),
+      linear-gradient(-45deg,var(--l) var(--g) 70%,#0000 0),
+      linear-gradient(45deg,var(--c) var(--g));
+    background-size: var(--s) var(--s);
+}
+  
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+}
+
+.grid{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    position: relative; 
+}
+
+.gameColor{
+    width: 205px;
+    height: 205px;
+    background-color: rgb(59, 2, 2);
+    position: absolute;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+    background-color: blue;
+}
+
+.apple{
+    background-color: purple;
+}
+
+.gameStr{
+    display: flex;
+    justify-content: center;
+}
+
+#rst{
+    display: none;
+}
+
+.gameRst{
+    display: flex;
+    justify-content: center;
+}
+
+#result, #grd{
+    display: none;
+}
+
+#lose{
+    display: none;
+}
